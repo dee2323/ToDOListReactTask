@@ -5,13 +5,17 @@ import TaskSearch from './components/TaskSearch';
 import TasksList from './components/TasksList';
 import './App.css'
 function App() {
+  const [tasks, setTasks] = useState([])
+  const handleAddingTask = (task) => {
+    setTasks([...tasks, { task, id: tasks.length, isCompleted: false }])
+  }
 
   return (
     <div className="App">
-      <TaskForm />
+      <TaskForm handleAddingTask={handleAddingTask} />
       <TaskSearch />
-      <TasksList />
-      <Footer />
+      <TasksList tasks={tasks} handleDeletingTask={handleDeletingTask} handleCompletion={handleCompletion} />
+      <Footer countTasks={tasks.length} />
     </div>
   );
 }
