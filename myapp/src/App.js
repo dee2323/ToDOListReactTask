@@ -9,7 +9,16 @@ function App() {
   const handleAddingTask = (task) => {
     setTasks([...tasks, { task, id: tasks.length, isCompleted: false }])
   }
+  const handleDeletingTask = (id) => {
+    const newTasks = tasks.filter((task) => task.id !== id);
+    setTasks([...newTasks])
+  }
+  const handleCompletion = (id) => {
 
+    const newTask = tasks.find(task => { if (task.id === id) task.isCompleted = !task.isCompleted });
+    setTasks([...tasks])
+  }
+  console.log(tasks)
   return (
     <div className="App">
       <TaskForm handleAddingTask={handleAddingTask} />
