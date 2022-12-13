@@ -1,0 +1,35 @@
+.todos {
+
+    padding: 1rem;
+}
+
+.todos li {
+    display: flex;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    justify-content: flex-start;
+    text-transform: capitalize;
+    border-bottom: 1px solid rgb(214, 133, 146);
+    width: 100%;
+
+
+}
+
+.todos li p {
+    width: 70%;
+
+
+}
+
+
+
+.todos li button {
+    all: unset;
+    cursor: pointer;
+    color: #8b83b8;
+    padding-left: 3rem;
+}
+.complete {
+    color: #b6b6b6;
+    text-decoration: line-through;
+}

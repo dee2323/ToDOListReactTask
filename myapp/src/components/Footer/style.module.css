@@ -1,0 +1,6 @@
+.counterContainer{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: rgb(214, 133, 146);;
+}

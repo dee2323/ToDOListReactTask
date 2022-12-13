@@ -1,0 +1,43 @@
+.form {
+    width: 100%;
+    display: block;
+}
+
+.h1 {
+    opacity: .6;
+    padding: .4rem;
+    color: #8b83b8;
+    text-align: center;
+}
+
+.p {
+    padding-bottom: .3rem;
+
+}
+.form input,
+input {
+    font-size: 20px;
+    width: 83%;
+    padding: 1rem 1rem;
+    border: none;
+    border-bottom: rgb(214, 133, 146) dashed 2px;
+    outline: none;
+    color: #444;
+    margin-bottom: 1rem;
+}
+.form button {
+    height: 40px;
+    display: inline-block;
+    margin-left: 1.4rem;
+    width: 40px;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    background-color: rgb(214, 133, 146);
+    color: white;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
