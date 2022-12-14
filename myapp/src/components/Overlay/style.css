@@ -1,0 +1,56 @@
+
+.overlay {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 2;
+}
+
+.confirm-box {
+    position: absolute;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 2rem;
+    width: 20%;
+    height: 20%;
+    top: 45%;
+    left: 40%;
+    background: rgb(250, 235, 235);
+    border-radius: 5px;
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, .4);
+}
+
+.close {
+    cursor: pointer;
+}
+
+.confirm-box p {
+    font-size: 18px;
+    margin-bottom: 10px;
+
+}
+
+.display {
+    display: none;
+}
+
+.confirmBtns button {
+    all: unset;
+    border: 2px rgb(214, 133, 146) solid;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+    padding: .3rem;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.confirmBtns button #confirmDeleting:hover {
+    background-color: red;
+}
