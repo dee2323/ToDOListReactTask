@@ -1,7 +1,9 @@
-import React, { useState } from 'react'
+import React, { useContext, useState } from 'react'
+import { tasksContext } from '../../context/tasksContext'
 import Overlay from '../Overlay/index'
 import style from './style.module.css'
-const TasksList = ({ tasks, handleDeletingTask, handleCompletion, isSearching }) => {
+const TasksList = () => {
+    const { tasks, handleDeletingTask, handleCompletion, isSearching }=useContext(tasksContext)
     const [showOVerlay, setShowOverlay] = useState(false)
     const [id, setId] = useState(0)
 

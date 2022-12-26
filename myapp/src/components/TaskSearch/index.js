@@ -1,6 +1,8 @@
-import React, { useState } from 'react'
+import React, { useContext, useState } from 'react'
 import style from './style.module.css'
-const TaskSearch = ({ handleSearch, setIsSearching }) => {
+import {tasksContext} from '../../context/tasksContext'
+const TaskSearch = () => {
+    const { handleSearch, setIsSearching }=useContext(tasksContext)
     const [input, setInput] = useState('')
     return <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}> <input type="text" placeholder="search..." className={style.search} id="search" value={input} onChange={(e) => {
         setInput(e.target.value); input && handleSearch(input); input && setIsSearching(true)

@@ -1,7 +1,9 @@
-import React, { useState } from 'react'
+import React, { useContext, useState } from 'react'
 import style from './style.module.css'
+import {tasksContext} from '../../context/tasksContext'
 
-const TaskForm = ({ handleAddingTask }) => {
+const TaskForm = () => {
+    const { handleAddingTask }=useContext(tasksContext)
     const [input, setInput] = useState('')
     return (<>
         <h1 className={style.h1}>ToDo List </h1>
